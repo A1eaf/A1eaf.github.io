@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 6.3.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="游戏名称&#x2F; Title: 病みつきヤンデレハーレム！ 制作公司&#x2F; Production: わるきゅ〜れ 发售日期&#x2F; Release Date: 2023&#x2F;03&#x2F;31 游戏类型&#x2F; Genre: ADV 故事介绍 主人公天野悠護（あまの・ゆうご）和青梅竹马葛美愛（かずら・みあ）过着平凡无奇的生活。 然而他的这种平静日常却随着因幼年时搬到意大利生活而分别的另一位青梅竹马白咲純恋（しらさき・すみれ）的回">
+<meta property="og:type" content="article">
+<meta property="og:title" content="病みつきヤンデレハーレム！">
+<meta property="og:url" content="http://example.com/2023/10/11/GalGame/%E7%97%85%E3%81%BF%E3%81%A4%E3%81%8D%E3%83%A4%E3%83%B3%E3%83%87%E3%83%AC%E3%83%8F%E3%83%BC%E3%83%AC%E3%83%A0%EF%BC%81/index.html">
+<meta property="og:site_name" content="Hacg的幻想乡">
+<meta property="og:description" content="游戏名称&#x2F; Title: 病みつきヤンデレハーレム！ 制作公司&#x2F; Production: わるきゅ〜れ 发售日期&#x2F; Release Date: 2023&#x2F;03&#x2F;31 游戏类型&#x2F; Genre: ADV 故事介绍 主人公天野悠護（あまの・ゆうご）和青梅竹马葛美愛（かずら・みあ）过着平凡无奇的生活。 然而他的这种平静日常却随着因幼年时搬到意大利生活而分别的另一位青梅竹马白咲純恋（しらさき・すみれ）的回">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/2023/10/11/GalGame/%E7%97%85%E3%81%BF%E3%81%A4%E3%81%8D%E3%83%A4%E3%83%B3%E3%83%87%E3%83%AC%E3%83%8F%E3%83%BC%E3%83%AC%E3%83%A0%EF%BC%81/game01.jpg">
+<meta property="og:image" content="http://example.com/2023/10/11/GalGame/%E7%97%85%E3%81%BF%E3%81%A4%E3%81%8D%E3%83%A4%E3%83%B3%E3%83%87%E3%83%AC%E3%83%8F%E3%83%BC%E3%83%AC%E3%83%A0%EF%BC%81/%E8%91%9B%20%E7%BE%8E%E6%84%9B.jpg">
+<meta property="og:image" content="http://example.com/2023/10/11/GalGame/%E7%97%85%E3%81%BF%E3%81%A4%E3%81%8D%E3%83%A4%E3%83%B3%E3%83%87%E3%83%AC%E3%83%8F%E3%83%BC%E3%83%AC%E3%83%A0%EF%BC%81/%E7%99%BD%E5%92%B2%20%E7%B4%94%E6%81%8B.jpg">
+<meta property="og:image" content="http://example.com/2023/10/11/GalGame/%E7%97%85%E3%81%BF%E3%81%A4%E3%81%8D%E3%83%A4%E3%83%B3%E3%83%87%E3%83%AC%E3%83%8F%E3%83%BC%E3%83%AC%E3%83%A0%EF%BC%81/%E7%B5%90%E5%A5%BD%20%E8%93%AE%E8%8F%AF.jpg">
+<meta property="og:image" content="http://example.com/2023/10/11/GalGame/%E7%97%85%E3%81%BF%E3%81%A4%E3%81%8D%E3%83%A4%E3%83%B3%E3%83%87%E3%83%AC%E3%83%8F%E3%83%BC%E3%83%AC%E3%83%A0%EF%BC%81/cg01.jpg">
+<meta property="og:image" content="http://example.com/2023/10/11/GalGame/%E7%97%85%E3%81%BF%E3%81%A4%E3%81%8D%E3%83%A4%E3%83%B3%E3%83%87%E3%83%AC%E3%83%8F%E3%83%BC%E3%83%AC%E3%83%A0%EF%BC%81/cg02.jpg">
+<meta property="og:image" content="http://example.com/2023/10/11/GalGame/%E7%97%85%E3%81%BF%E3%81%A4%E3%81%8D%E3%83%A4%E3%83%B3%E3%83%87%E3%83%AC%E3%83%8F%E3%83%BC%E3%83%AC%E3%83%A0%EF%BC%81/cg03.jpg">
+<meta property="og:image" content="http://example.com/2023/10/11/GalGame/%E7%97%85%E3%81%BF%E3%81%A4%E3%81%8D%E3%83%A4%E3%83%B3%E3%83%87%E3%83%AC%E3%83%8F%E3%83%BC%E3%83%AC%E3%83%A0%EF%BC%81/cg04.jpg">
+<meta property="og:image" content="http://example.com/2023/10/11/GalGame/%E7%97%85%E3%81%BF%E3%81%A4%E3%81%8D%E3%83%A4%E3%83%B3%E3%83%87%E3%83%AC%E3%83%8F%E3%83%BC%E3%83%AC%E3%83%A0%EF%BC%81/cg05.jpg">
+<meta property="article:published_time" content="2023-10-11T03:45:41.000Z">
+<meta property="article:modified_time" content="2023-10-13T03:17:54.463Z">
+<meta property="article:author" content="Found_Not_404">
+<meta property="article:tag" content="连裤袜">
+<meta property="article:tag" content="女学生">
+<meta property="article:tag" content="学园">
+<meta property="article:tag" content="后宫">
+<meta property="article:tag" content="病娇">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/2023/10/11/GalGame/%E7%97%85%E3%81%BF%E3%81%A4%E3%81%8D%E3%83%A4%E3%83%B3%E3%83%87%E3%83%AC%E3%83%8F%E3%83%BC%E3%83%AC%E3%83%A0%EF%BC%81/game01.jpg">
+
+<link rel="canonical" href="http://example.com/2023/10/11/GalGame/%E7%97%85%E3%81%BF%E3%81%A4%E3%81%8D%E3%83%A4%E3%83%B3%E3%83%87%E3%83%AC%E3%83%8F%E3%83%BC%E3%83%AC%E3%83%A0%EF%BC%81/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>病みつきヤンデレハーレム！ | Hacg的幻想乡</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">Hacg的幻想乡</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2023/10/11/GalGame/%E7%97%85%E3%81%BF%E3%81%A4%E3%81%8D%E3%83%A4%E3%83%B3%E3%83%87%E3%83%AC%E3%83%8F%E3%83%BC%E3%83%AC%E3%83%A0%EF%BC%81/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Found_Not_404">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hacg的幻想乡">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          病みつきヤンデレハーレム！
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2023-10-11 11:45:41" itemprop="dateCreated datePublished" datetime="2023-10-11T11:45:41+08:00">2023-10-11</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2023-10-13 11:17:54" itemprop="dateModified" datetime="2023-10-13T11:17:54+08:00">2023-10-13</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/galgame/" itemprop="url" rel="index"><span itemprop="name">galgame</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <img src="/2023/10/11/GalGame/%E7%97%85%E3%81%BF%E3%81%A4%E3%81%8D%E3%83%A4%E3%83%B3%E3%83%87%E3%83%AC%E3%83%8F%E3%83%BC%E3%83%AC%E3%83%A0%EF%BC%81/game01.jpg" class="" title="病みつきヤンデレハーレム！">
+<p>游戏名称/ Title: 病みつきヤンデレハーレム！<br>
+制作公司/ Production: わるきゅ〜れ<br>
+发售日期/ Release Date: 2023/03/31<br>
+游戏类型/ Genre: ADV</p>
+<h4 id="故事介绍">故事介绍</h4>
+<p>主人公天野悠護（あまの・ゆうご）和青梅竹马葛美愛（かずら・みあ）过着平凡无奇的生活。</p>
+<p>然而他的这种平静日常却随着因幼年时搬到意大利生活而分别的另一位青梅竹马白咲純恋（しらさき・すみれ）的回国以及对他常年以来积累的感情的爱的告白而发生了巨大变化！</p>
+<p>純恋是悠護的初恋对象，容貌和性格都无可挑剔。<br>
+但是，每当看到至今为止都像家人一样和自己生活的美愛的脸，他的心情就十分复杂。</p>
+<p>怀抱着暧昧模糊的感情，悠護在某天拜访了美愛的家，他却看到了沉迷于自慰的美愛。</p>
+<p>可是，面对被和自己一样的人偶和抱枕以及偷拍的自己的照片——完全就是“悠護goods”所包围的美愛的异样的自慰，悠護哑口无言。</p>
+<p>于是他在知道了美愛爱着自己的事，还有美愛因純恋的登场而嫉妒的事的同时，被陷入暴走状态的美愛袭击，推倒在床上。<br>
+美愛骑在悠護身上大喊着对他的爱，其结果是，他的童贞被夺走了。不管形式如何，既然和美愛上床了，那就得拒绝純恋的告白。</p>
+<p>后来，悠护来到純恋家，传达了不能交往的意思，但是一直思念着他的純恋自然不会轻易放弃。</p>
+<p>純恋也表现出了感情强烈的病态独占欲，甚至用电击枪和手铐求爱。最终悠護不可避免地和她发生了肉体关系。<br>
+不正当的关系很快暴露，拼上悠護的女子战争就此开幕！</p>
+<p>为了率先怀孕，美愛和純恋争先恐后地榨取着哪怕多一滴的种子。<br>
+这时作为悠護前辈的学生会长結好蓮華（ゆずき・れんげ）也凭着对他的歪曲的爱参战，争夺战就此激化！</p>
+<p>在被病娇少女们榨取的生活前方所等待着的结局是！？</p>
+<span id="more"></span>
+<h4 id="人物介绍">人物介绍</h4>
+<p>葛 美愛（かずら みあ）<br>
+<img src="葛 美愛.jpg"></p>
+<p>第一人称：わたし（watashi）<br>
+身高：157cm<br>
+三围：B94cm/W57cm/H86cm</p>
+<p>・住在悠護邻家的女学生，是代替他在海外生活的父母照顾他的青梅竹马。<br>
+性格温油贤淑，擅长做饭、缝纫这样的家务活，让人感受到包容力和母性本能的地方在暗处中深受男生欢迎。是「非正式将来想要娶的女孩排行榜」、「看起来会尽力的孩子排行榜」排名靠前的常客。<br>
+因此，羡慕和嫉妒的锐利视线常常扎在和她在一起很长时间的悠護身上。</p>
+<p>・虽然对悠護一心一意，但处于无法再迈出一步的状态，对恋爱晚熟的她无法将两人的关系发展到家人·兄妹以上。<br>
+但因为长时间在一起所以觉得「两个人结合是理所当然的」。<br>
+然而，当登场的悠護幼年时的青梅竹马纯恋自报姓名时，美愛对他的感情暴走了。</p>
+<p>「就让我来照顾悠君一辈子吧  ♥毕竟这是 『老婆』的义务呢♥ 」</p>
+<p>为了最喜欢的悠護，想要尽一切所能的 「母性病娇」。照顾他也是为了确认和他之间的联系。由于思念强烈，如果认为自己没有存在的意义，精神就会变得很不稳定，甚至想要消失。同时也存在依赖性的一面。</p>
+<p>因为太喜欢悠護，被偷拍他的照片和自制的人偶、抱枕所包围着，偷偷借用着收集来的 「 悠護goods 」 当作小菜自慰。有着危险的兴趣。</p>
+<p>白咲 純恋（しらさき すみれ）<br>
+<img src="白咲 純恋.jpg"></p>
+<p>第一人称：アタシ（atashi）<br>
+身高：160cm<br>
+三围： B92cm/W55cm/H87cm</p>
+<p>・从意大利弗洛伦萨转校到悠護就读的学校的美少女。<br>
+金发碧眼的可爱容貌，是会被街上的星探发现也不足为奇的程度，身材出众。</p>
+<p>・其真实身份是悠護最初的青梅竹马。在同一家医院几乎同时出生，由于父母的关系和悠護变得亲近起来。<br>
+小时候和悠護一起在附近的公园玩，还是他的初吻对象。</p>
+<p>・由于父母的原因搬到意大利后就和悠護分别了，但为了完成再会的约定而回国。<br>
+为了取回至今为止没能见面的时光，想着「想和悠護在一起的时间越长越好！」，并带着在意大利培养的热情对悠護进行着过多的肌肤相触并积极地接近他。</p>
+<p>「我的爱人。哪怕只有一分一秒，我也要你长久地想着我♥」<br>
+983b59c71b5000666ae55e01673e1a084860f8b5</p>
+<p>诞生出 「想和悠護在一起的时间越长越好！」 的想法的 『独占束缚型病娇』 。积极地表现出想要与他接触的侵略性，更倾向于珍惜 「时间」 。</p>
+<p>计算着一天要有一次膣内中出，至少要求悠护给自己见不到面的时间(365天 × 见不到面的年数)的膣内中出，试图让他的身体和心灵……不，是让他的灵魂明白比起其他女人，自己才是最好的女人。因为爱太强烈，有时会使用手铐或使用剪刀威胁等手段，强行逼近的情况也会发生。</p>
+<p>結好 蓮華（ゆずき れんげ）<br>
+<img src="結好 蓮華.jpg"></p>
+<p>第一人称：私（わたし）<br>
+身高：164cm<br>
+三围：B96cm/W58cm/H89cm</p>
+<p>・悠護所就读学校的前辈，是他所属的学生会的会长。<br>
+成绩优秀的同时又有着凛然的美貌，深得教师信赖。</p>
+<p>・由于是在家教严格的家庭中长大，情感表现缺乏起伏，那副没有表情的脸会给第一次接触她的人留下难以接近的印象。<br>
+由于那种冷艳的容貌加上本人一本正经的性格，给学生们留下了严厉的高压的印象。被周围的人保持着一定距离，成为难以接近的「高岭之花」。<br>
+另一方面， 暗中喜欢她那蔑视的表情和眼神的兴趣奇特的隐藏粉丝大有人在，而她并不知道这件事。</p>
+<p>・因为家里经营者制药企业，加上她给人一种知性的感觉，所以被某人称为「适合药瓶和试管的女人」。<br>
+・出于学生会长的立场和责任感而对悠護很强势，但真正的心情是……</p>
+<p>「呵呵，你会有什么样的反应呢？希望能染上我的颜色……♥」</p>
+<p>对于和自己很亲密的异性悠護产生了固执的爱慕之情，源于强烈的好奇心的 「执着型病娇」，总想知道「怎样才能让他感到高兴」， 「如果做了某件事，他会有什么反应」，不知不觉间变得对他越来越着迷。</p>
+<p>天野 悠護（あまの ゆうご）</p>
+<p>第一人称：俺<br>
+身高：170cm<br>
+丁丁大小：平均</p>
+<p>・所属于学生会的男子学生。<br>
+对美愛和純恋来说是青梅竹马，与蓮華是所属于同一个学生会的前后辈的关系。</p>
+<p>・从美愛那里听说自己由于过去发生的某事而欠缺记忆中的一角，除了这件事外只是个平平无奇的学生。<br>
+・性格老实认真，有一些情感细腻的方面，但这反而给他带来麻烦，使其容易被情绪左右而陷入优柔寡断。</p>
+<p>尤其是在恋爱方面，被美愛她们深厚的爱情所玩弄，被她们绝世的身体热情地接近、每天过着被榨取的生活。</p>
+<h4 id="CG预览">CG预览</h4>
+<img src="cg01.jpg">
+<img src="cg02.jpg">
+<img src="cg03.jpg">
+<img src="cg04.jpg">
+<img src="cg05.jpg">
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E8%BF%9E%E8%A3%A4%E8%A2%9C/" rel="tag"># 连裤袜</a>
+              <a href="/tags/%E5%A5%B3%E5%AD%A6%E7%94%9F/" rel="tag"># 女学生</a>
+              <a href="/tags/%E5%AD%A6%E5%9B%AD/" rel="tag"># 学园</a>
+              <a href="/tags/%E5%90%8E%E5%AE%AB/" rel="tag"># 后宫</a>
+              <a href="/tags/%E7%97%85%E5%A8%87/" rel="tag"># 病娇</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2023/10/11/GalGame/%E3%82%A8%E3%83%AB%E3%83%95%E3%82%A7%E3%83%B3%E3%82%AD%E3%83%B3%E3%82%B0/" rel="prev" title="エルフェンキング">
+      <i class="fa fa-chevron-left"></i> エルフェンキング
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2023/10/13/GalGame/%E6%82%AA%E3%81%AE%E5%A5%B3%E5%B9%B9%E9%83%A8%E3%81%AE%E5%8F%97%E9%9B%A3%20%E3%80%9C%E5%B9%B3%E5%92%8C%E3%81%AB%E3%81%AA%E3%81%A3%E3%81%9F%E4%B8%96%E7%95%8C%E3%81%A7%E8%B9%82%E8%BA%99%E3%81%95%E3%82%8C%E3%82%8B%E7%BE%8E%E8%B2%8C%E3%81%A8%E5%B0%8A%E5%8E%B3%E3%80%9C/" rel="next" title="悪の女幹部の受難 〜平和になった世界で蹂躙される美貌と尊厳〜">
+      悪の女幹部の受難 〜平和になった世界で蹂躙される美貌と尊厳〜 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%95%85%E4%BA%8B%E4%BB%8B%E7%BB%8D"><span class="nav-number">1.</span> <span class="nav-text">故事介绍</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%BA%BA%E7%89%A9%E4%BB%8B%E7%BB%8D"><span class="nav-number">2.</span> <span class="nav-text">人物介绍</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#CG%E9%A2%84%E8%A7%88"><span class="nav-number">3.</span> <span class="nav-text">CG预览</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Found_Not_404</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">12</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+        <span class="site-state-item-count">68</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2025</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Found_Not_404</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>
