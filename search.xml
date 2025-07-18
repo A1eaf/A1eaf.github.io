@@ -3,7 +3,8 @@
   <entry>
     <title>Arch Linux安装rime输入法并使用雾凇拼音词库</title>
     <url>/2025/07/12/Linux/Arch%20Linux%E4%B8%8B%E4%BD%BF%E7%94%A8rime%E8%BE%93%E5%85%A5%E6%B3%95/</url>
-    <content><![CDATA[<p><a href="https://github.com/iDvel/rime-ice">“雾凇拼音”</a>是近年比较热门的开源词库，整合了多个优秀词库并持续更新，并且雾凇拼音支持动态词频调整，常用词会越输越准，所以特别适合作为Linux系统下中文用户词库的最佳选择！不过Linux下配置Rime比较麻烦，所以就有了这边傻瓜版的Fcitx5框架下rime输入法的安装指北。</p>
+    <content><![CDATA[<p><a href="https://github.com/iDvel/rime-ice">“雾凇拼音”</a>是近年比较热门的开源词库，整合了多个优秀词库并持续更新，并且雾凇拼音支持动态词频调整，常用词会越输越准，所以特别适合作为Linux系统下中文用户词库的最佳选择！不过Linux下配置Rime比较麻烦，所以就有了这份傻瓜版的Fcitx5框架下rime输入法的安装指北。<br>
+<img src="https://github.com/iDvel/rime-ice/raw/refs/heads/main/others/demo.webp" name="图片来自雾凇拼音"></p>
 <span id="more"></span>
 <p>一、安装Fcitx5并配置rime</p>
 <p>1.安装Fcitx5框架，pacman 会提醒你需要安装 fcitx5、fcitx5-configtool、fcitx5-gtk、fcitx5-qt。这里直接直接默认全部安装即可</p>
@@ -18,9 +19,7 @@
 <pre><code>sudo nano /etc/environment
 </code></pre>
 <p>按照下面修改变量值，不存在就添加环境变量</p>
-<pre><code>GTK_IM_MODULE=fcitx
-QT_IM_MODULE=fcitx
-XMODIFIERS=@im=fcitx
+<pre><code>XMODIFIERS=@im=fcitx
 SDL_IM_MODULE=fcitx
 GLFW_IM_MODULE=ibus
 </code></pre>
@@ -61,26 +60,7 @@ GLFW_IM_MODULE=ibus
         Fcitx5：右键任务栏图标 → 中州韵 → 雾凇拼音 → 重新部署
 </code></pre>
 <img src="重新部署输入法.png">
-<p>挂载rime的同步文件夹<br>
-1 首先安装samba服务：</p>
-<pre><code>sudo pacman -S samba
-</code></pre>
-<p>2 创建凭证文件：</p>
-<pre><code>sudo mkdir /etc/samba/credentials #创建凭证目录
-sudo nano /etc/samba/credentials/syncrime
-</code></pre>
-<p>编辑证书文件加入访问smb共享需要的用户名密码如下格式：</p>
-<pre><code>username=#当前用户名称
-password=#当前用户密码
-</code></pre>
-<p>5 创建挂载脚本，并设置开机自启动。要注意挂载后的目录权限，且创建脚本后不可移动，否则上下文关系变更后脚本无法开机执行。</p>
-<pre><code>#!/bin/bash
-sudo -S sudo mount -t cifs -o credentials=/etc/samba/credentials/syncrime,iocharset=utf8,uid=aleafyu,gid=wheel 远程目录地址 ~/.local/share/fcitx5/rime/sync/  &lt;&lt; EOF
-
-#执行提权命令时， 在此设置当前用户的的密码
-
-EOF
-</code></pre>
+<p>到此位置，Linux下使用rime输入法的简单部署就此完成，可以开始你的快乐输入之旅咯。</p>
 ]]></content>
       <categories>
         <category>Linux系统</category>
