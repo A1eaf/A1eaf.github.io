@@ -1,76 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<search>
-  <entry>
-    <title>Arch Linux安装rime输入法并使用雾凇拼音词库</title>
-    <url>/blog/1724385052.html</url>
-    <content><![CDATA[<p><a href="https://github.com/iDvel/rime-ice">“雾凇拼音”</a>是近年比较热门的开源词库，整合了多个优秀词库并持续更新，并且雾凇拼音支持动态词频调整，常用词会越输越准，所以特别适合作为Linux系统下中文用户词库的最佳选择！不过Linux下配置Rime比较麻烦，所以就有了这份傻瓜版的Fcitx5框架下rime输入法的安装指北。<br>
-<img src="https://github.com/iDvel/rime-ice/raw/refs/heads/main/others/demo.webp" name="图片来自雾凇拼音"></p>
-<span id="more"></span>
-<p>一、安装Fcitx5并配置rime</p>
-<p>1.安装Fcitx5框架，pacman 会提醒你需要安装 fcitx5、fcitx5-configtool、fcitx5-gtk、fcitx5-qt。这里直接直接默认全部安装即可</p>
-<pre><code>sudo pacman -S fcitx5-im
-</code></pre>
-<img src="安装Fcitx5框架.png">
-<p>2.在Fcitx5框架下使用rime输入法</p>
-<pre><code>sudo pacman -S fcitx5-rime
-</code></pre>
-<img src="在Fcitx5框架下使用rime输入法.png">
-<p>3.修改环境配置处理全局输入</p>
-<pre><code>sudo nano /etc/environment
-</code></pre>
-<p>按照下面修改变量值，不存在就添加环境变量</p>
-<pre><code>XMODIFIERS=@im=fcitx
-SDL_IM_MODULE=fcitx
-GLFW_IM_MODULE=ibus
-</code></pre>
-<p>二、通过paru安装雾凇拼音词库</p>
-<p><a href="https://github.com/iDvel/rime-ice">雾凇拼音（rime-ice）</a>整合了多个优秀词库，支持现代词汇、成语、古诗词等。如果有其他问题，建议直接去GitHub上看大佬的配置说明，写的很全。</p>
-<p>1.这里使用paru直接安装</p>
-<pre><code>paru -S rime-ice-git
-</code></pre>
-<p>如果想只用雾凇词库的拼音输入法，可以执行下面的命令</p>
-<pre><code>paru -S rime-ice-pinyin-git
-</code></pre>
-<p>2.通过编辑用户自定义配置文件启用雾凇拼音</p>
-<pre><code>nano ~/.local/share/fcitx5/rime/default.custom.yaml
-</code></pre>
-<p>新增或修改以下配置</p>
-<pre><code>patch:
-    schema_list:
-        - schema: rime_ice
-    menu/page_size: 9             # 每页候选词数量
-</code></pre>
-<p>启用雾凇拼音输入方案</p>
-<pre><code>nano ~/.local/share/fcitx5/rime/rime_ice.custom.yaml
-</code></pre>
-<p>新增或修改以下配置</p>
-<pre><code>patch:
-    __include: rime_ice:/patch  # 关键！加载雾凇拼音的增强配置
-
-    # 可选自定义项
-    switches:  
-        - name: ascii_mode
-        reset: 0                # 默认中文输入
-        states: [ 中文, 西文 ]
-    translator/enable_user_dict: false  # 禁用个人词库（推荐用雾凇词库）
-</code></pre>
-<p>三、部署与激活</p>
-<pre><code>任务栏
-    重新部署配置：
-        Fcitx5：右键任务栏图标 → 中州韵 → 雾凇拼音 → 重新部署
-</code></pre>
-<img src="重新部署输入法.png">
-<p>到此位置，Linux下使用rime输入法的简单部署就此完成，可以开始你的快乐输入之旅咯。</p>
-]]></content>
+<search> 
+  
+  
+    
+    <entry>
+      <title>Arch Linux安装rime输入法并使用雾凇拼音词库</title>
+      <link href="/blog/1724385052.html"/>
+      <url>/blog/1724385052.html</url>
+      
+        <content type="html"><![CDATA[<p><a href="https://github.com/iDvel/rime-ice">“雾凇拼音”</a>是近年比较热门的开源词库，整合了多个优秀词库并持续更新，并且雾凇拼音支持动态词频调整，常用词会越输越准，所以特别适合作为Linux系统下中文用户词库的最佳选择！不过Linux下配置Rime比较麻烦，所以就有了这份傻瓜版的Fcitx5框架下rime输入法的安装指北。<br><img src="https://github.com/iDvel/rime-ice/raw/refs/heads/main/others/demo.webp" name="图片来自雾凇拼音"></p><span id="more"></span><p>一、安装Fcitx5并配置rime</p><p>1.安装Fcitx5框架，pacman 会提醒你需要安装 fcitx5、fcitx5-configtool、fcitx5-gtk、fcitx5-qt。这里直接直接默认全部安装即可</p><pre><code>sudo pacman -S fcitx5-im</code></pre><img src="安装Fcitx5框架.png"><p>2.在Fcitx5框架下使用rime输入法</p><pre><code>sudo pacman -S fcitx5-rime</code></pre><img src="在Fcitx5框架下使用rime输入法.png"><p>3.修改环境配置处理全局输入</p><pre><code>sudo nano /etc/environment</code></pre><p>按照下面修改变量值，不存在就添加环境变量</p><pre><code>XMODIFIERS=@im=fcitxSDL_IM_MODULE=fcitxGLFW_IM_MODULE=ibus</code></pre><p>二、通过paru安装雾凇拼音词库</p><p><a href="https://github.com/iDvel/rime-ice">雾凇拼音（rime-ice）</a>整合了多个优秀词库，支持现代词汇、成语、古诗词等。如果有其他问题，建议直接去GitHub上看大佬的配置说明，写的很全。</p><p>1.这里使用paru直接安装</p><pre><code>paru -S rime-ice-git</code></pre><p>如果想只用雾凇词库的拼音输入法，可以执行下面的命令</p><pre><code>paru -S rime-ice-pinyin-git</code></pre><p>2.通过编辑用户自定义配置文件启用雾凇拼音</p><pre><code>nano ~/.local/share/fcitx5/rime/default.custom.yaml</code></pre><p>新增或修改以下配置</p><pre><code>patch:    schema_list:        - schema: rime_ice    menu/page_size: 9             # 每页候选词数量</code></pre><p>启用雾凇拼音输入方案</p><pre><code>nano ~/.local/share/fcitx5/rime/rime_ice.custom.yaml</code></pre><p>新增或修改以下配置</p><pre><code>patch:    __include: rime_ice:/patch  # 关键！加载雾凇拼音的增强配置    # 可选自定义项    switches:          - name: ascii_mode        reset: 0                # 默认中文输入        states: [ 中文, 西文 ]    translator/enable_user_dict: false  # 禁用个人词库（推荐用雾凇词库）</code></pre><p>三、部署与激活</p><pre><code>任务栏    重新部署配置：        Fcitx5：右键任务栏图标 → 中州韵 → 雾凇拼音 → 重新部署</code></pre><img src="重新部署输入法.png"><p>到此位置，Linux下使用rime输入法的简单部署就此完成，可以开始你的快乐输入之旅咯。</p>]]></content>
+      
+      
       <categories>
-        <category>Linux系统</category>
+          
+          <category> Linux系统 </category>
+          
       </categories>
-      <tags>
-        <tag>Linux</tag>
-        <tag>rime</tag>
-        <tag>输入法</tag>
-        <tag>雾凇拼音</tag>
-        <tag>简体词库</tag>
-      </tags>
-  </entry>
+      
+      
+        <tags>
+            
+            <tag> Linux </tag>
+            
+            <tag> rime </tag>
+            
+            <tag> 输入法 </tag>
+            
+            <tag> 雾凇拼音 </tag>
+            
+            <tag> 简体词库 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+  
+  
 </search>
